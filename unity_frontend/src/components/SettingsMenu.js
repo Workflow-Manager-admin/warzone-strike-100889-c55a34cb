@@ -6,11 +6,19 @@
 import React from 'react';
 
 // PUBLIC_INTERFACE
+import { useGameContext } from "../game/GameContext";
+
 function SettingsMenu() {
     /**
      * Settings menu for volume, controls, and game options.
-     * UI and logic to be implemented.
+     * "Back to Menu" returns to LandingScreen.
      */
+    const { dispatch } = useGameContext();
+
+    const handleBack = () => {
+        dispatch({ type: "SET_STAGE", payload: "landing" });
+    };
+
     return (
         <div className="settings-menu" data-testid="settings-menu">
             <h2>Settings</h2>
@@ -35,7 +43,7 @@ function SettingsMenu() {
                     <li>Shoot: Mouse / Tap</li>
                 </ul>
             </div>
-            <button className="btn btn-back">Back to Menu</button>
+            <button className="btn btn-back" onClick={handleBack}>Back to Menu</button>
         </div>
     );
 }

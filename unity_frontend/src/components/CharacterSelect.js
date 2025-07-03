@@ -11,11 +11,20 @@ import React from 'react';
  */
 
 // PUBLIC_INTERFACE
+import { useGameContext } from "../game/GameContext";
+
 function CharacterSelect() {
     /**
      * Character selection screen for picking a player avatar.
-     * UI and logic to be implemented.
+     * "Next" advances to gun selection.
+     * (In future: record selected character!)
      */
+    const { dispatch } = useGameContext();
+
+    const handleNext = () => {
+        dispatch({ type: "SET_STAGE", payload: "gun-select" });
+    };
+
     return (
         <div className="character-select-screen" data-testid="character-select">
             <h2>Choose Your Character</h2>
@@ -26,7 +35,7 @@ function CharacterSelect() {
                 <div className="character-card placeholder">Character 2 (Preview)</div>
                 <div className="character-card placeholder">Character 3 (Preview)</div>
             </div>
-            <button className="to-gun-select btn">Next: Select Weapon</button>
+            <button className="to-gun-select btn" onClick={handleNext}>Next: Select Weapon</button>
         </div>
     );
 }
