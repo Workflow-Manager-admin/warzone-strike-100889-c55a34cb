@@ -1,13 +1,17 @@
-//
+// 
 // Player.js
 //
-// Skeleton file for Player logic and data module
+// Skeleton for Player logic and data module
 //
 
 // PUBLIC_INTERFACE
 function Player() {
-    /** Player game entity and controller logic. To be implemented. */
-    return null;
+    /**
+     * Player: Handles player game entity, movement, shooting, health, state, and input.
+     * Will manage all local player properties and actions within the arena.
+     * (Implementation to be added.)
+     */
+    return null; // Placeholder for future player mesh/logic
 }
 
 export default Player;

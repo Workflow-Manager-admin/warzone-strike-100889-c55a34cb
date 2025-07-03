@@ -1,13 +1,17 @@
-//
+// 
 // AIController.js
 //
-// Skeleton file for Enemy AI Controller logic module
+// Skeleton for Enemy AI Controller logic module
 //
 
 // PUBLIC_INTERFACE
 function AIController() {
-    /** Controls enemy AI logic, pathfinding, states, etc. To be implemented. */
-    return null;
+    /**
+     * AIController: Responsible for managing enemy AI behavior,
+     * including pathfinding, attacking, patrolling, and state transitions.
+     * (Implementation to be added.)
+     */
+    return null; // Placeholder for future AI logic
 }
 
 export default AIController;

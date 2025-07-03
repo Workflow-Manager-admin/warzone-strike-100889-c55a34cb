@@ -1,13 +1,17 @@
-//
+// 
 // Enemy.js
 //
-// Skeleton file for Enemy AI/game entity logic module
+// Skeleton for Enemy AI/game entity logic module
 //
 
 // PUBLIC_INTERFACE
 function Enemy() {
-    /** Enemy game entity and AI logic. To be implemented. */
-    return null;
+    /**
+     * Enemy: Represents an enemy AI entity on the battlefield.
+     * Will handle movement, attacking player, health, and state management.
+     * (Implementation to be added.)
+     */
+    return null; // Placeholder for future enemy mesh/logic
 }
 
 export default Enemy;
