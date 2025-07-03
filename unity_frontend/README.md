@@ -1,6 +1,6 @@
 # Lightweight React Template for KAVIA
 
-This project provides a minimal React template with a clean, modern UI and minimal dependencies.
+This project scaffolds a 3D shooting game with a modern UI, selection screens, and animated in-game arena, built atop React and react-three-fiber (Three.js). The architecture and game flow—including landing, selection, gameplay, overlays, and the main context/controller design—are described in detail in `kavia-docs/ARCHITECTURE.md`.
 
 ## Features
 
