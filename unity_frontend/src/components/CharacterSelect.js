@@ -9,7 +9,6 @@ import React from 'react';
  * CharacterSelect.js
  * Main UI: Character chooser with preview gallery and navigation controls
  */
-import React from 'react';
 
 // PUBLIC_INTERFACE
 function CharacterSelect() {
